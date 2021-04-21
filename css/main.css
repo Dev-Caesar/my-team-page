@@ -1,0 +1,212 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 7rem 1.8rem 2.4rem 1.8rem;
+  font-weight: 400;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .heading--1 {
+  font-family: "Pt Serif", serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  text-align: left;
+}
+
+.header__about-us {
+  margin-top: 3.8rem;
+}
+
+.header .heading--2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header__text {
+  max-width: 35rem;
+}
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(12rem, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  gap: 2.5rem;
+  row-gap: 6.4rem;
+  padding: 0 1.4rem;
+  max-width: 50rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  margin-bottom: 13.4rem;
+}
+
+.profile__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(11.5rem, 1fr) min-content;
+      grid-template-columns: minmax(11.5rem, 1fr) -webkit-min-content;
+      grid-template-columns: minmax(11.5rem, 1fr) min-content;
+  gap: 0.5rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__box--2 {
+  -webkit-transform: translateY(4.8rem);
+          transform: translateY(4.8rem);
+}
+
+.profile__box--4 {
+  -webkit-transform: translateY(4.8rem);
+          transform: translateY(4.8rem);
+}
+
+.profile__box--6 {
+  -webkit-transform: translateY(4.8rem);
+          transform: translateY(4.8rem);
+}
+
+.profile img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.profile__title {
+  font-family: "Pt Serif", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+
+.profile .heading--3 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.author p {
+  font-family: "Montserrat", san-serif;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.author a:link,
+.author a:visited {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-weight: 700;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.2rem;
+}
+
+.author a:hover,
+.author a:active {
+  color: #000;
+}
+
+@media only screen and (min-width: 37.5em) {
+  body {
+    margin: 0 auto;
+    max-width: 144rem;
+  }
+  .profile {
+    -ms-grid-columns: (minmax(15rem, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(15rem, 1fr));
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
+    row-gap: 6rem;
+    max-width: 80vw;
+    margin-bottom: 11.4rem;
+    margin-top: 9.9rem;
+  }
+  .profile__box--2 {
+    -webkit-transform: translateY(9.9rem);
+            transform: translateY(9.9rem);
+  }
+  .profile__box--4 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .profile__box--5 {
+    -webkit-transform: translateY(15rem);
+            transform: translateY(15rem);
+    margin-bottom: 11.4rem;
+  }
+  .profile__box--6 {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .profile .heading--3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 43.75em) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .header__about-us {
+    display: -ms-grid;
+    display: grid;
+    margin: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
