@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{https://my-team-page-flame.vercel.app/}">
+    <a href="https://my-team-page-flame.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{https://github.com/Dev-Caesar/my-team-page}">
+    <a href="https://github.com/Dev-Caesar/my-team-page">
       Solution
     </a>
     <span> | </span>
